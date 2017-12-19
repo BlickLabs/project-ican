@@ -1,16 +1,33 @@
 <nav class="site-navbar">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
-  </div>
-  <div class="site-navbar__menu-trigger">
-    <span class="fa fa-bars"></span>
+    <a href="index.html">
+      <img class="ican-navbar-logo" src="img/logos/ican-logo.png" alt="Logo">
+    </a>
   </div>
   <div class="site-navbar__menu-container">
-    <div class="site-navbar__mobile-logo-container">
-      <a href="index.html"><img src="#" alt="Logo"></a> {# Change #}
+    <div class="site-navbar__menu {% if section == 'index' %} nav-selected-link-container {% endif %}">
+      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">
+        <span class="ican-font-metropolis-semibold ican-site-link nav-link {% if section == 'index' %} nav-selected-link {% endif %}">HOME</span>
+      </a>
     </div>
     <div class="site-navbar__menu">
-      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">Home</a>
+      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">
+        <span class="ican-font-metropolis-semibold ican-site-link nav-link {% if section == 'about-us' %} nav-selected-link {% endif %}">ABOUT US</span>
+      </a>
+    </div>
+    <div class="site-navbar__menu">
+      <a href="index.html" class="site-navbar__menu-link {% if section == 'index' %}active{% endif %}">
+        <span class="ican-font-metropolis-semibold ican-site-link nav-link {% if section == 'contact' %} nav-selected-link {% endif %}">CONTACT</span>
+      </a>
+    </div>
+    <div class="nav-separator"></div>
+    <div class="nav-lang-container">
+      <a href="">
+        <span class="ican-font-metropolis-regular ican-site-link nav-link">ES</span>
+      </a>
+      <a href="">
+        <span class="ican-font-metropolis-regular ican-site-link nav-link">EN</span>
+      </a>
     </div>
   </div>
 </nav>
