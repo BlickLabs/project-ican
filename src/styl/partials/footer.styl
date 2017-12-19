@@ -29,6 +29,14 @@
   margin 0 47px
   width 2px
 
+.site-footer-links-section
+  align-items center
+  display flex
+  flex-direction row
+
+.site-footer-links-container:first-child
+  margin-right 40px
+
 .site-footer-links-container
   display flex
   flex-direction column
@@ -85,3 +93,15 @@
     height 147px
     right 198px
     top -73.5px
+
+@media screen and (max-width 768px)
+  .site-footer
+    height 330px
+
+  .site-footer-first-section
+    flex-direction column
+
+  .site-footer-separator
+    height 2px
+    margin 25px 0
+    width 80px
