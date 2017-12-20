@@ -3,27 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://blicklabs.github.io/project-ican/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ICAN" />
+    <meta property="og:description" content="Expertos en Cannabis Medicinal" />
+    <meta property="og:image" content="https://blicklabs.github.io/project-ican/img/backgrounds/homepage-cover.jpg" />
+    <meta name="keywords" content="Cannabis, sin fines de lucro, salud, médicos, doctores, científicos, responsabilidad social, impacto, farmacéutico, autoridades, líderes">
     {% block meta %}{% endblock %}
     {% block extra_css %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
+    <link rel="icon" type="image/png" sizes="40x32" href="img/favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.png">
+    <title>ICAN</title>
   </head>
   <body>
     <div id="page">
-      {% if section == 'inicio' or section == 'nosotros' or section == 'contacto' %}
-        {% include 'partials/navegacion.njk' %}
-      {% else %}
+      {% if section == 'inicio' or section == 'about-us' or section == 'contact' %}
         {% include 'partials/navbar.njk' %}
+      {% else %}
+        {% include 'partials/navegacion.njk' %}
       {% endif %}
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% if section == 'inicio' or section == 'nosotros' or section == 'contacto' %}
-        {% include 'partials/pie-pagina.njk' %}
-      {% else %}
+      {% if section == 'inicio' or section == 'about-us' or section == 'contact' %}
         {% include 'partials/footer.njk' %}
+      {% else %}
+        {% include 'partials/pie-pagina.njk' %}
       {% endif %}
     </div>
     {% block js_libs_config %}
