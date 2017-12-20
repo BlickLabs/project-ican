@@ -2,7 +2,7 @@
   <div class="footer-decorator {% if section == 'index' %} line-home {% endif %} {% if section == 'about-us' %} line-about {% endif %} {% if section == 'contact' %} line-contact {% endif %}"></div>
   <div class="site-footer-first-section">
     <div class="site-footer-logo-container">
-      <a href="/index.html">
+      <a href="index.html">
         <img class="site-footer-logo" src="img/logos/ican-logo-variant.png">
       </a>
     </div>
@@ -10,13 +10,13 @@
     <div class="site-footer-links-section">
       <div class="site-footer-links-container">
         <div class="site-footer-link-space">
-          <a href="/index.html">
+          <a href="index.html">
             <span class="ican-site-link {% if section == 'index' %} link-selected {% endif %}">HOME</span>
           </a>
         </div>
         <div class="site-footer-link-space">
           <a href="about-us.html">
-            <span class="ican-site-link">ABOUT US</span>
+            <span class="ican-site-link {% if section == 'about-us' %} link-selected {% endif %}">ABOUT US</span>
           </a>
         </div>
         <div class="site-footer-link-space">
@@ -50,7 +50,7 @@
     </div>
   </div>
   <div class="site-footer-notice-container">
-    <a href="">
+    <a href="aviso-de-privacidad.html">
       <span class="ican-site-link">Notice of Privacy</span>
     </a>
   </div>
