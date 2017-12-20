@@ -22,11 +22,11 @@
     </div>
     <div class="nav-separator"></div>
     <div class="nav-lang-container">
-      <a href="">
+      <a href="{% if section == 'index' %} inicio.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}">
         <span class="ican-font-metropolis-regular ican-site-link nav-link">ES</span>
       </a>
-      <a href="">
-        <span class="ican-font-metropolis-regular ican-site-link nav-link">EN</span>
+      <a href="{% if section == 'inicio' %} index.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}">
+        <span class="ican-font-metropolis-regular ican-site-link nav-link" style="{% if section == 'index' or section == 'about-us' or section == 'contact' %} font-weight: bold; {% endif %}">EN</span>
       </a>
     </div>
   </div>
