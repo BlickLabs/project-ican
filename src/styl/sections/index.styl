@@ -129,9 +129,8 @@
     max-width initial
 
   .homepage-cover-title
-    font-size remify(20px)
+    font-size remify(22px)
     line-height 30px
-    text-align center
 
   .homepage-paragraph
     font-size remify(17px)
@@ -174,12 +173,16 @@
     left 50px
     top 23px
 
+  .ican-text-decorator
+    left 25px
+
   .ican-title
     font-size remify(30px)
 
   .homepage-second-section-paragraph-container,
   .homepage-second-section-paragraph-container + a
-    padding-left 0
+    padding-left 50px
+    padding-right 20px
 
   .ican-paragraph
     font-size remify(15px)
@@ -213,6 +216,9 @@
     padding-left 0
     width 100%
 
+  .join-us-paragraph-mobile
+    padding-left 50px
+
   .homepage-paragraph-form-container
     padding-top 40px
 
@@ -221,3 +227,36 @@
 
   .homepage-third-section-separator
     margin 25px 0 30px 0
+
+@media screen and (min-width 890px) and (max-width 990px)
+  .homepage-img-1-container,
+  .homepage-img-1
+    height 320px
+    width 361px
+
+  .homepage-img-2-container,
+  .homepage-img-2
+    height 180px
+    width 259px
+
+  .homepage-img-2-container
+    bottom -30px
+    right -60px
+
+  .homepage-img-3-container,
+  .homepage-img-3
+    height 240px
+    width 353px
+
+@media screen and (min-width 769px) and (max-width 889px)
+  .homepage-second-section
+    flex-direction column
+
+  .homepage-second-section-info
+    padding 80px 0 0 0
+
+  .homepage-third-section
+    flex-direction column-reverse
+
+  .homepage-img-4-container
+    float right
