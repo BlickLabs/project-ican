@@ -1,0 +1,71 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+  <div class="wrapper-space-navbar">
+    <div class="contact-section bg-img-base">
+      <div>
+        <div class="ican-special-title-container">
+          <h1 class="ican-font-hindsiliguri-semibold ican-special-title no-margin">Contáctanos</h1>
+          <div class="ican-title-container">
+            <h2 class="ican-font-hindsiliguri-semibold ican-title no-margin">Contáctanos</h2>
+          </div>
+        </div>
+        <div class="contact-form-section">
+          <div class="contact-paragraph-form-container">
+            <p class="homepage-paragraph paragraph-form ican-font-metropolis-regular no-margin">
+              ¡Suscríbite a nuestra lista de correo!
+            </p>
+          </div>
+          <div class="homepage-third-section-separator"></div>
+          <form style="display: flex; flex-direction: column">
+            <input class="ican-input-base ican-font-metropolis-regular" placeholder="Nombre" type="text" name="name">
+            <input class="ican-input-base ican-font-metropolis-regular" placeholder="Email" type="email" name="email">
+            <input class="ican-base-btn ican-font-metropolis-semibold" type="submit" name="" value="Enviar">
+          </form>
+        </div>
+      </div>
+      <div class="contact-panel-container">
+        <div class="contact-panel-content">
+          <div class="contact-panel-paragraph-container contact-panel-content-padding">
+            <div class="contact-panel-dot"></div>
+            <p class="contact-panel-paragraph ican-font-metropolis-regular no-margin">
+              Le enviaremos solo información relevante; no compartiremos su información con terceros ni lo contactaremos innecesariamente
+            </p>
+          </div>
+          <div class="contact-panel-paragraph-container contact-panel-content-padding">
+            <div class="contact-panel-dot"></div>
+            <p class="contact-panel-paragraph ican-font-metropolis-regular no-margin">
+              Puede anular su suscripción en cualquier momento
+            </p>
+          </div>
+          <div class="contact-panel-separator"></div>
+          <div class="contact-panel-content-padding">
+            <span class="contact-panel-paragraph ican-font-metropolis-bold no-margin">Puede leer nuestra <a href="">política de<br>privacidad aquí</a></span>
+          </div>
+          <div class="contact-panel-separator"></div>
+          <div class="contact-panel-content-padding">
+            <a href="">
+              <div class="contact-social-network-container">
+                <div class="contact-icons-container">
+                  <i class="contact-icons fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <span class="contact-social-network-text ican-font-metropolis-regular">institutodelCannabis</span>
+              </div>
+            </a>
+            <a href="">
+              <div class="contact-social-network-container">
+                <div class="contact-icons-container">
+                  <i class="contact-icons fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <span class="contact-social-network-text ican-font-metropolis-regular">medicinalmx</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
