@@ -12,11 +12,19 @@
   </head>
   <body>
     <div id="page">
-      {% include 'partials/navbar.njk' %}
+      {% if section == 'inicio' or section == 'nosotros' or section == 'contacto' %}
+        {% include 'partials/navegacion.njk' %}
+      {% else %}
+        {% include 'partials/navbar.njk' %}
+      {% endif %}
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% include 'partials/footer.njk' %}
+      {% if section == 'inicio' or section == 'nosotros' or section == 'contacto' %}
+        {% include 'partials/pie-pagina.njk' %}
+      {% else %}
+        {% include 'partials/footer.njk' %}
+      {% endif %}
     </div>
     {% block js_libs_config %}
     {% endblock %}
