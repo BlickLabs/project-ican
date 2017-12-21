@@ -161,6 +161,10 @@ textarea
   &:hover
     color $icanGreen
 
+.ican-input-base-container
+  display flex
+  flex-direction column-reverse
+
 .ican-input-base
   background-color $icanGrayForm
   border none
@@ -177,6 +181,25 @@ textarea
 
 .privacy-text-color
   color $icanBlack
+
+.form-message-es.success,
+.form-message-es.error,
+.form-message-en.success,
+.form-message-en.error
+  margin-top 0
+  margin-bottom 20px
+
+.form-message-es.error,
+.form-message-en.error
+  color red
+
+.form-message-es.success,
+.form-message-en.success
+  color green
+
+.error > i,
+.success > i
+  margin-right 10px
 
 // END GENERAL //
 

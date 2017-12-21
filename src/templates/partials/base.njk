@@ -19,7 +19,7 @@
   </head>
   <body>
     <div id="page">
-      {% if section == 'inicio' or section == 'about-us' or section == 'contact' %}
+      {% if section == 'home' or section == 'about-us' or section == 'contact' %}
         {% include 'partials/navbar.njk' %}
       {% else %}
         {% include 'partials/navegacion.njk' %}
@@ -27,7 +27,7 @@
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% if section == 'inicio' or section == 'about-us' or section == 'contact' %}
+      {% if section == 'home' or section == 'about-us' or section == 'contact' %}
         {% include 'partials/footer.njk' %}
       {% else %}
         {% include 'partials/pie-pagina.njk' %}

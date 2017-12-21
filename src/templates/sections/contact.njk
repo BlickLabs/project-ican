@@ -8,9 +8,9 @@
     <div class="contact-section bg-img-base">
       <div>
         <div class="ican-special-title-container">
-          <h1 class="ican-font-hindsiliguri-semibold ican-special-title no-margin">Contact us</h1>
+          <h1 class="ican-font-hindsiliguri-bold ican-special-title no-margin">Contact us</h1>
           <div class="ican-title-container">
-            <h2 class="ican-font-hindsiliguri-semibold ican-title no-margin">Contact us</h2>
+            <h2 class="ican-font-hindsiliguri-bold ican-title no-margin">Contact us</h2>
           </div>
         </div>
         <div class="contact-form-section">
@@ -20,9 +20,14 @@
             </p>
           </div>
           <div class="homepage-third-section-separator"></div>
-          <form style="display: flex; flex-direction: column" name="ican-form-en" method="post" action="http://integrations.blick.mx/ican/join/en/">
-            <input class="ican-input-base ican-font-metropolis-regular" placeholder="Full name" type="text" name="name">
-            <input class="ican-input-base ican-font-metropolis-regular" placeholder="E-mail address" type="email" name="email">
+          <form style="display: flex; flex-direction: column" id="ican-form-en" method="post" action="http://integrations.blick.mx/ican/join/en/">
+            <div class="ican-input-base-container">
+              <input class="ican-input-base ican-font-metropolis-regular" placeholder="Full name" type="text" name="name" required>
+            </div>
+            <div class="ican-input-base-container">
+              <input class="ican-input-base ican-font-metropolis-regular" placeholder="E-mail address" type="email" name="email" required>
+            </div>
+            <div class="form-message-en"></div>
             <input class="ican-base-btn ican-font-metropolis-semibold" type="submit" name="" value="Send">
           </form>
         </div>

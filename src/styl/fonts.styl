@@ -1,5 +1,15 @@
 @font-face {
   font-family: 'HindSiliguri';
+  src: url('../fonts/HindSiliguri-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HindSiliguri-Bold.woff') format('woff'),
+    url('../fonts/HindSiliguri-Bold.ttf')  format('truetype'),
+    url('../fonts/HindSiliguri-Bold.svg') format('svg');
+  font-weight: $bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HindSiliguri';
   src: url('../fonts/HindSiliguri-Light.eot?#iefix') format('embedded-opentype'),
     url('../fonts/HindSiliguri-Light.woff') format('woff'),
     url('../fonts/HindSiliguri-Light.ttf')  format('truetype'),
@@ -207,6 +217,11 @@
   font-weight: $thin;
   font-style: italic;
 }
+
+.ican-font-hindsiliguri-bold
+  font-family 'HindSiliguri'
+  font-weight $bold
+  font-style normal
 
 .ican-font-hindsiliguri-light
   font-family 'HindSiliguri'

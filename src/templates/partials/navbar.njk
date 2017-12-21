@@ -1,13 +1,13 @@
 <nav class="site-navbar">
   <div class="site-navbar__desktop-logo-container">
-    <a href="index.html">
+    <a href="home.html">
       <img class="ican-navbar-logo" src="img/logos/ican-logo.png" alt="Logo">
     </a>
   </div>
   <div class="site-navbar__menu-container">
-    <div class="site-navbar__menu {% if section == 'inicio' %} nav-selected-link-container {% endif %}">
-      <a href="index.html" class="site-navbar__menu-link {% if section == 'inicio' %} active {% endif %}">
-        <span class="ican-font-metropolis-semibold ican-site-link nav-link {% if section == 'inicio' %} nav-selected-link {% endif %}">HOME</span>
+    <div class="site-navbar__menu {% if section == 'home' %} nav-selected-link-container {% endif %}">
+      <a href="home.html" class="site-navbar__menu-link {% if section == 'home' %} active {% endif %}">
+        <span class="ican-font-metropolis-semibold ican-site-link nav-link {% if section == 'home' %} nav-selected-link {% endif %}">HOME</span>
       </a>
     </div>
     <div class="site-navbar__menu {% if section == 'about-us' %} nav-selected-link-container {% endif %}">
@@ -22,11 +22,11 @@
     </div>
     <div class="nav-separator"></div>
     <div class="nav-lang-container">
-      <a href="{% if section == 'inicio' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}">
+      <a href="{% if section == 'home' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}">
         <span class="ican-font-metropolis-regular ican-site-link nav-link">ES</span>
       </a>
-      <a href="{% if section == 'index' %} inicio.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}">
-        <span class="ican-font-metropolis-regular ican-site-link nav-link" style="{% if section == 'inicio' or section == 'about-us' or section == 'contact' %} font-weight: bold; {% endif %}">EN</span>
+      <a href="{% if section == 'index' %} home.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}">
+        <span class="ican-font-metropolis-regular ican-site-link nav-link" style="{% if section == 'home' or section == 'about-us' or section == 'contact' %} font-weight: bold; {% endif %}">EN</span>
       </a>
     </div>
   </div>
@@ -38,7 +38,7 @@
   <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
     <div class="hamburger-menu-header" data-attribute="">
       <div class="" data-attribute="">
-        <a href="" data-attribute="">
+        <a href="home.html" data-attribute="">
           <img class="hamburger-logo" src="img/logos/ican-logo.png" data-attribute="">
         </a>
       </div>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="hamburger-menu-body ican-font-metropolis-regular" data-attribute="">
-      <a data-attribute="" href="index.html" class="hamburger-menu-link {% if section == 'inicio' %}link-active{% endif %}">
+      <a data-attribute="" href="home.html" class="hamburger-menu-link {% if section == 'home' %}link-active{% endif %}">
         <div class="hamburger-link-container">
           <div class="hamburger-stroke-container">
             <div class="hamburger-stroke"></div>
@@ -71,7 +71,7 @@
           <span class="hamburger-text">CONTACT</span>
         </div>
       </a>
-      <a data-attribute="" href="{% if section == 'inicio' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
+      <a data-attribute="" href="{% if section == 'home' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
         <div class="hamburger-link-container">
           <div class="hamburger-stroke-container">
             <div class="hamburger-stroke"></div>
@@ -79,12 +79,12 @@
           <span class="hamburger-text">ES</span>
         </div>
       </a>
-      <a data-attribute="" href="{% if section == 'index' %} inicio.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
+      <a data-attribute="" href="{% if section == 'index' %} home.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
         <div class="hamburger-link-container">
           <div class="hamburger-stroke-container">
             <div class="hamburger-stroke"></div>
           </div>
-          <span class="hamburger-text" style="{% if section == 'inicio' or section == 'about-us' or section == 'contact' %} font-weight: bold; {% endif %}">EN</span>
+          <span class="hamburger-text" style="{% if section == 'home' or section == 'about-us' or section == 'contact' %} font-weight: bold; {% endif %}">EN</span>
         </div>
       </a>
     </div>
