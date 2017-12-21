@@ -137,6 +137,7 @@ textarea
 .ican-base-btn
   background-color $icanGreen
   border none
+  border-radius 0
   color #fff
   cursor pointer
   font-size remify(12px)
@@ -144,11 +145,18 @@ textarea
   letter-spacing 0.9px
   padding 0
   text-transform uppercase
+  transition background-color 0.3s
   width 170px
+
+  &:hover
+    background-color #6c983a
+    transition background-color 0.3s
 
 .ican-site-link
   color $white
-  font-size remify(13px)
+  font-size remify(11px)
+  font-weight 500
+  letter-spacing 1.6px
 
   &:hover
     color $icanGreen

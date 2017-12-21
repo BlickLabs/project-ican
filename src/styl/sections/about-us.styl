@@ -82,8 +82,61 @@
     margin 40px 0 0 0
 
   .about-us-second-section-paragraph-container
-    padding 80px 0 0 0
+    padding 80px 20px 0 50px
 
   .about-us-second-section-text-decorator
     bottom -50px
     left 30px
+
+@media screen and (min-width 365px) and (max-width 445px)
+  .about-us-second-section-paragraph-container
+    padding-top 110px
+
+  .about-us-second-section-text-decorator
+    bottom -90px
+
+@media screen and (min-width 769px) and (max-width 1270px)
+  .about-us-img-1-container,
+  .about-us-img-1
+    height 285px
+    width 445px
+
+@media screen and (min-width 787px) and (max-width 900px)
+  .about-us-first-section
+    flex-direction column-reverse
+
+  .about-us-first-section-info-container
+    margin-top 40px
+    margin-right 8%
+    width auto
+
+  .about-us-first-section-panel
+    height 390px
+    width 380px
+
+  .about-us-img-1-container
+    bottom 23px
+    left 0
+    top initial
+
+  .about-us-second-section
+    flex-direction column
+
+  .about-us-img-2-container,
+  .about-us-img-2
+    display none
+
+  .about-us-background-img-2
+    background-image url("../img/about-us/about-us-img-2.jpg")
+    height 200px
+    width 100%
+
+@media screen and (min-width 901px) and (max-width 1181px)
+  .about-us-img-1-container,
+  .about-us-img-1
+    height 200px
+    width 312px
+
+  .about-us-first-section-info-container
+    margin-right 15%
+
