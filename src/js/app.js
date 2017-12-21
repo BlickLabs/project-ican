@@ -1,46 +1,59 @@
-(function () {
-  $.validator.setDefaults({
-    invalidHandler: function (event, validator) {
-      var form = $(this);
-      form.find('.form-message')
-      .removeClass(form.hasClass('success') ? 'success' : 'error')
-      .html('');
-    },
-    submitHandler: function (form) {
-      var $form = $(form).serialize(),
-        fields = $(form).find('select, input, textarea, button').not('[disabled]'),
-        formMessage = $(form).find('.form-message'),
-        successMessage = $('<i class="fa fa-check-circle"></i><span>Mensaje enviado exitosamente</span>'),
-        errorMessage = $('<i class="fa fa-times-circle"></i><span>Ocurrió un error</span>'),
-        setMessage = function (success) {
-          var message = success ? successMessage : errorMessage;
-          fields.removeAttr('disabled');
-          formMessage.removeClass(success ? 'error' : 'success');
-          formMessage.addClass(success ? 'success' : 'error');
-          formMessage.html(message);
-        };
+$('form[name="ican-form-es"]').validate({
+  // required fields
+  name: 'required',
+  email: 'required',
+  messages: {
+   name: "Por favor, introduce tu Nombre.",
+   email: "Por favor, introduce un Correo Electrónico.",
+  },
+  submitHandler: function(form) {
+   var data = $('form[name="ican-form-es"]').serialize();
+   console.log(data);
+   $.ajax({
+     url: 'http://integrations.blick.mx/ican/join/es/',
+     method: 'POST',
+     data: data
+   }).done(function(data) {
+     if (parseInt(data) === 1) {
+       alertify.logPosition("bottom right");
+       alertify.success("Gracias por contactarte con nosotros.");
+       $('form[name="ican-form-es"]')[0].reset();
+     }
+   });
+  },
+  invalidHandler: function(event, validator) {
+   var errors = validator.numberOfInvalids();
+   alertify.logPosition("bottom right");
+   alertify.error("Verifica tu información tienes " + errors + " errores.");
+  }
+});
 
-      fields.attr('disabled', 'disabled');
-      formMessage.html('');
-      if (!$(form).find('.button-wrapper .loader').length) {
-        $(form).find('.button-wrapper').addClass('disabled');
-      }
-      $.ajax({
-        url: $(form).attr('action'),
-        method: 'POST',
-        data: $form
-      })
-        .done(function (data) {
-          setMessage(parseInt(data) === 1);
-          form.reset();
-        })
-        .fail(function () {
-          setMessage(false);
-        })
-        .always(function () {
-          fields.removeAttr('disabled');
-          $(form).find('.button-wrapper').removeClass('disabled');
-        });
-    }
-  });
-})();
+$('form[name="ican-form-en"]').validate({
+  // required fields
+  name: 'required',
+  email: 'required',
+  messages: {
+   name: "Please, enter your Name.",
+   email: "Please, enter yout Email.",
+  },
+  submitHandler: function(form) {
+   var data = $('form[name="ican-form-en"]').serialize();
+   console.log(data);
+   $.ajax({
+     url: 'http://integrations.blick.mx/ican/join/en/',
+     method: 'POST',
+     data: data
+   }).done(function(data) {
+     if (parseInt(data) === 1) {
+       alertify.logPosition("bottom right");
+       alertify.success("Thank you for contacting us.");
+       $('form[name="ican-form-en"]')[0].reset();
+     }
+   });
+  },
+  invalidHandler: function(event, validator) {
+   var errors = validator.numberOfInvalids();
+   alertify.logPosition("bottom right");
+   alertify.error("Verify your information do you have " + errors + " errors.");
+  }
+});
