@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /home/static/project-ican;
+  index index.html index.htm;
+
+  server_name sandbox.ican.getmore.mx www.sandbox.ican.getmore.mx ican.com ican.com.mx ican.mx institutodelcannabis.org institutodelcannabis.com.mx medicinal.mx mmj.com.mx;
+
+  location / {
+      try_files $uri $uri/ =404;
+  }
+}
