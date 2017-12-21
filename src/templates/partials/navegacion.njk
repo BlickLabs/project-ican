@@ -22,10 +22,10 @@
     </div>
     <div class="nav-separator"></div>
     <div class="nav-lang-container">
-      <a href="{% if section == 'inicio' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}">
+      <a href="{% if section == 'home' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}">
         <span class="ican-font-metropolis-regular ican-site-link nav-link" style="{% if section == 'index' or section == 'nosotros' or section == 'contacto' %} font-weight: bold; {% endif %}">ES</span>
       </a>
-      <a href="{% if section == 'index' %} inicio.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}">
+      <a href="{% if section == 'index' %} home.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}">
         <span class="ican-font-metropolis-regular ican-site-link nav-link">EN</span>
       </a>
     </div>
@@ -71,7 +71,7 @@
           <span class="hamburger-text">CONTACTO</span>
         </div>
       </a>
-      <a data-attribute="" href="{% if section == 'inicio' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
+      <a data-attribute="" href="{% if section == 'home' %} index.html {% elif section == 'about-us' %} nosotros.html {% elif section == 'contact' %} contacto.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
         <div class="hamburger-link-container">
           <div class="hamburger-stroke-container">
             <div class="hamburger-stroke"></div>
@@ -79,7 +79,7 @@
           <span class="hamburger-text" style="{% if section == 'index' or section == 'nosotros' or section == 'contacto' %} font-weight: bold; {% endif %}">ES</span>
         </div>
       </a>
-      <a data-attribute="" href="{% if section == 'index' %} inicio.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
+      <a data-attribute="" href="{% if section == 'index' %} home.html {% elif section == 'nosotros' %} about-us.html {% elif section == 'contacto' %} contact.html {% endif %}" class="hamburger-menu-link {% if section == 'about-us' %}link-active{% endif %}">
         <div class="hamburger-link-container">
           <div class="hamburger-stroke-container">
             <div class="hamburger-stroke"></div>
