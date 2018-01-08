@@ -5,7 +5,7 @@ server {
   root /home/static/project-ican;
   index index.html index.htm;
 
-  server_name sandbox.ican.getmore.mx www.sandbox.ican.getmore.mx ican.com ican.com.mx ican.mx institutodelcannabis.org institutodelcannabis.com.mx medicinal.mx mmj.com.mx;
+  server_name sandbox.ican.getmore.mx www.sandbox.ican.getmore.mx ican.com ican.com.mx ican.mx institutodelcannabis.org institutodelcannabis.com.mx medicinal.mx mmj.com.mx ican.blick.mx www.ican.blick.mx;
 
   location / {
       try_files $uri $uri/ =404;
