@@ -30,11 +30,10 @@
   width 2px
 
 .site-footer-links-section
-  align-items center
   display flex
   flex-direction row
 
-.site-footer-links-container:first-child
+.site-footer-links-container
   margin-right 40px
 
 .site-footer-links-container
@@ -121,3 +120,13 @@
 
   .site-link-margin-top
     margin-top 4px
+
+  .site-footer-links-section
+    flex-wrap wrap
+    justify-content center
+
+  .site-footer-links-container
+    margin-right 20px
+
+  .site-footer-links-container:nth-child(3)
+    margin-right 0
