@@ -30,11 +30,10 @@
   width 2px
 
 .site-footer-links-section
-  align-items center
   display flex
   flex-direction row
 
-.site-footer-links-container:first-child
+.site-footer-links-container
   margin-right 40px
 
 .site-footer-links-container
@@ -100,6 +99,13 @@
 .site-link-margin-top
   margin-top 2px;
 
+.footer-warnings-container
+  display flex
+  flex-direction row
+
+  & .site-footer-notice-container:first-child
+    margin-right 20px
+
 @media screen and (max-width 768px)
   .site-footer
     height 330px
@@ -121,3 +127,13 @@
 
   .site-link-margin-top
     margin-top 4px
+
+  .site-footer-links-section
+    flex-wrap wrap
+    justify-content center
+
+  .site-footer-links-container
+    margin-right 20px
+
+  .site-footer-links-container:nth-child(3)
+    margin-right 0
